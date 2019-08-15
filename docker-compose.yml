@@ -1,0 +1,21 @@
+#docker-compose版本
+version: "3"
+services:
+   db:
+     #network_mode: host
+     image: mysql:5.7
+     volumes:
+      
+       - ~/mysqldata/samamysql:/var/lib/mysql
+#       - ~/mysqldata/conf/my.cnf:/etc/my.cnf
+#       - ~/mysqldata/init:/docker-entrypoint-initdb.d/     
+     restart: always
+     environment:
+      
+       MYSQL_ROOT_PASSWORD: thesky
+       MYSQL_DATABASE: simpledb
+       MYSQL_USER: admin
+       MYSQL_PASSWORD: theskyyet
+
+     ports:
+       - 3306:3306
