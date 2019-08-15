@@ -12,10 +12,10 @@ services:
      restart: always
      environment:
       
-       MYSQL_ROOT_PASSWORD: samarit
+       MYSQL_ROOT_PASSWORD: root
        MYSQL_DATABASE: simpledb
        MYSQL_USER: admin
-       MYSQL_PASSWORD: samarit-client
+       MYSQL_PASSWORD: samarit
       
 
      ports:
