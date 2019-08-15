@@ -12,10 +12,11 @@ services:
      restart: always
      environment:
       
-       MYSQL_ROOT_PASSWORD: thesky
+       MYSQL_ROOT_PASSWORD: samarit
        MYSQL_DATABASE: simpledb
        MYSQL_USER: admin
-       MYSQL_PASSWORD: theskyyet
+       MYSQL_PASSWORD: samarit-client
+      
 
      ports:
        - 3306:3306
